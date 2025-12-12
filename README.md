@@ -1,6 +1,4 @@
-# Test Your Knowledge - Quiz Application
-
-A modern, interactive quiz application built as a Frontend Developer Intern Assignment. The application implements a pixel-perfect design based on the provided Figma specifications with smooth animations and full accessibility support.
+A modern, interactive quiz application. The application implements a pixel-perfect design based on the provided Figma specifications with smooth animations and full accessibility support.
 
 
 ## 🛠️ Tech Stack
