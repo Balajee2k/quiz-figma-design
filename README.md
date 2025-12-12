@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Test Your Knowledge - Quiz Application
 
-## Getting Started
+A modern, interactive quiz application built as a Frontend Developer Intern Assignment. The application implements a pixel-perfect design based on the provided Figma specifications with smooth animations and full accessibility support.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Tech Stack
+
+### Required Stack (Implemented)
+- **React** with **TypeScript** - Type-safe component development
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **Modern ES6+** JavaScript features
+
+### Bonus Stack (Implemented)
+- **Next.js 15** - React framework with App Router for optimized performance
+- **Framer Motion** - Smooth animations and micro-interactions
+
+## ✨ Key Features Implemented
+
+### Design Accuracy
+- Pixel-perfect implementation matching Figma specifications
+- Custom gradient backgrounds with layered effects
+- Playfair Display font for elegant typography
+- Responsive card layout with proper spacing and shadows
+- Custom cat paw mascot with "Best of Luck!" speech bubble
+
+### Interactive Elements
+- Smooth hover states on answer options
+- Scale and lift animations on button interactions
+- Progress bar with animated fill transitions
+- Seamless question transitions with slide animations
+- Pulsating mascot animation
+
+### Quiz Functionality
+- Multi-question quiz with 4 sample questions
+- Answer selection with visual feedback
+- Navigation between questions (Previous/Next)
+- Score calculation and percentage display
+- Results screen with restart functionality
+
+### Accessibility (WCAG 2.1)
+- Semantic HTML structure with proper heading hierarchy
+- ARIA labels and roles for screen readers
+- Keyboard navigation support:
+  - Arrow keys for navigation between questions
+  - Number keys (1-3) for quick answer selection
+  - Enter key to proceed to next question
+- Focus visible states for all interactive elements
+- Screen reader announcements for question changes
+- Color contrast ratios meeting AA standards
+
+### Performance Optimizations
+- Next.js App Router for optimized rendering
+- Font optimization with next/font
+- Component-based architecture for code splitting
+- Efficient re-renders with React hooks (useCallback, useMemo)
+
+## 📁 Project Structure
+
+```
+quiz-app/
+├── src/
+│   ├── app/
+│   │   ├── globals.css      # Global styles and CSS variables
+│   │   ├── layout.tsx       # Root layout with fonts
+│   │   └── page.tsx         # Main page component
+│   ├── components/
+│   │   ├── Quiz.tsx           # Main quiz container
+│   │   ├── ProgressBar.tsx    # Animated progress indicator
+│   │   ├── QuestionCard.tsx   # Question display component
+│   │   ├── OptionButton.tsx   # Answer option button
+│   │   ├── NavigationButtons.tsx # Previous/Next controls
+│   │   ├── ResultsScreen.tsx  # Final score display
+│   │   ├── CatPawMascot.tsx   # Animated mascot component
+│   │   └── index.ts           # Component exports
+│   └── data/
+│       └── quizData.ts        # Quiz questions and answers
+├── public/                    # Static assets
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Assumptions Made
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Desktop-Only Design**: As specified, the implementation focuses on desktop screens (800px+ width). Mobile responsiveness was not included per requirements.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Sample Questions**: Used sample questions from the Figma design. The quiz data structure allows easy addition of more questions.
 
-## Learn More
+3. **Correct Answers**: Assumed logical correct answers for each question:
+   - Cat sound: "Meow-Meow"
+   - Fridge contents: "Ice Cream"
+   - Banana color: "Yellow"
+   - Dog legs: "Four"
 
-To learn more about Next.js, take a look at the following resources:
+4. **Score Display**: Implemented percentage-based scoring as shown in the Figma design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Font Choice**: Used Playfair Display as shown in the design for headings and Inter for body text.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. **Color Palette**: Extracted colors from the design:
+   - Primary Dark: #1a3a47
+   - Primary Teal: #1a5568
+   - Accent Cyan: #6bc5d8
+   - Background: Linear gradient from #a8d8ea to #e8f4f8
 
-## Deploy on Vercel
+## ⏱️ Time Spent
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Task | Time |
+|------|------|
+| Project Setup & Configuration | 15 minutes |
+| Component Architecture | 20 minutes |
+| UI Implementation | 45 minutes |
+| Animations & Transitions | 30 minutes |
+| Accessibility Features | 20 minutes |
+| Testing & Bug Fixes | 15 minutes |
+| Documentation | 15 minutes |
+| **Total** | **~2.5 hours** |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+**Balajee**
+
+### Best Practices ✅
+- WCAG 2.1 accessibility compliance
+- Semantic HTML
+- ESLint for code quality
+- Git version control
+
+
+
+
+---
+
+*Built with ❤️ using Next.js, TypeScript, and Tailwind CSS*
